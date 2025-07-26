@@ -36,14 +36,15 @@ kraftoon_lab/
 ├── index.html 
 ├── login.php 
 ├── signup.php 
-├── admin/ │
-   ├── admin_dashboard.php │
-   └── manage_products.php ├── assets/ │
-   ├── css/ │
-   ├── js/ │
-   └── images/
-   └── database/
-   └── users.sql
+├── admin/
+│  ├── admin_dashboard.php 
+│  └── manage_products.php 
+├── assets/
+│  ├── css/ 
+│  ├── js/
+│  └── images/
+└── database/
+└── users.sql
 
 ---
 
