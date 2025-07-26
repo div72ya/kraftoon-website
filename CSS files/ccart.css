@@ -1,0 +1,212 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    list-style-type: none;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f5f0d9;
+}
+
+   
+/* Logo */
+.navbar .logo {
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin: 10px auto;
+    object-fit: cover;
+    display: block;
+    border-style: groove;
+    box-shadow: 0 0 10px 0 #908d8d;
+}
+
+.navbar h1{
+   font-family: 'Times New Roman', Times, serif;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+ 
+/* Social Icons */
+.navbar .social-icons {
+    display: flex;
+    /*flex-direction: column;*/
+    justify-content: right;
+    gap: 10px;
+    justify-content: right;
+    margin-right: 20px;
+}
+
+.navbar .social-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+
+.navbar .social-icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+/* Navbar (Fixed on Top) */
+.navbar {
+    position: fixed;
+    top: 0;
+    /* left: 80px;  Starts after sidebar */
+    width: 100%;
+    background: rgb(32, 80, 106);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid #ddd;
+    z-index: 999;
+}
+
+/* Navbar Title */
+.navbar ul{
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 30px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.navbar li{
+    list-style-type: none;
+    display: inline-block;
+    padding: 10px;
+}
+
+.navbar li a{
+    color: black;
+    text-decoration: none; 
+}
+
+.navbar li {
+    color: black;
+    text-decoration: none; 
+    transition: transform 0.3s;
+}
+
+.navbar li:hover{
+    cursor: pointer;
+    text-decoration: overline;
+    transform: scale(1.1);
+}
+
+/* Navbar Icons */
+.nav-icons {
+    display: flex;
+    gap: 10px;
+    flex-direction: column;
+}
+
+.nav-icons img {
+    width: 35px;
+    height: 35px;
+    border-radius: 50%;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.nav-icons img:hover {
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.main-container{
+    margin-top: 220px;
+}
+
+/* Cart Container */
+.cart-container {
+    width: 60%;
+    margin-top: 220px;
+    margin: 50px auto;
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.cart-container h1{
+    text-align: center;
+    font-family: 'Times New Roman', Times, serif;
+    font-size: 2rem;
+    font-weight: 700;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 10px;
+    border: 1px solid #ddd;
+    text-align: center;
+}
+
+th {
+    background-color: #f4f4f4;
+}
+
+/* Button Styles */
+.quantity-controls a {
+    padding: 5px 10px;
+    font-size: 16px;
+    background-color: black;
+    color: white;
+    text-decoration: none;
+    border-radius: 50%;
+    margin: 0 5px;
+    display: inline-block;
+}
+
+.quantity-controls a:hover {
+    background-color: rgb(6, 10, 39);
+}
+
+.buttons {
+    text-align: center;
+}
+
+.checkout-btn, .continue-shopping {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: rgb(22, 29, 80);
+    color: white;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.checkout-btn:hover, .continue-shopping:hover {
+    background: rgb(6, 10, 39);
+}
+
+/* Align Grand Total row to the right */
+.grand-total-row td {
+    text-align: right;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+/* Style for the total amount */
+.grand-total-row .total-amount {
+    text-align: right;
+    padding-right: 20px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+}
